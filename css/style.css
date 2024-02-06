@@ -1,3 +1,160 @@
-.header h1 {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0 7vw;
+  background: radial-gradient(circle at center, #000000 83%, #252710);
+}
+
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+}
+.header .header__logo {
+  color: #e8f369;
+  font-size: 25px;
+  font-weight: 500;
+}
+.header .nav__list {
+  flex-direction: row;
+  line-height: 25px;
+  justify-content: space-around;
+}
+.header .nav__list .nav__item {
   color: #ffffff;
+  margin: 5px 15px;
+  display: inline-block;
+  list-style: none;
+}
+.header .nav__list .nav__item a {
+  color: #5a5959;
+  font-weight: 300;
+  text-decoration: none;
+  background: linear-gradient(to bottom, transparent 0%, transparent 90%, #e8f369 100%);
+  background-size: 50% 100%;
+  background-position: 200% 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.header .nav__list .nav__item a .active, .header .nav__list .nav__item a:hover {
+  color: #ffffff;
+  font-weight: 500;
+  background-position: 100% 0;
+}
+.header .nav__button {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  border: 1px solid white;
+  border-radius: 13px;
+  text-decoration: none;
+  padding: 10px 50px;
+}
+
+.main .description {
+  margin-top: 15vh;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main .description .description__info {
+  max-width: 40vw;
+  margin-right: 10vw;
+  color: #ffffff;
+}
+.main .description .description__info .description__info-title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 70px;
+}
+.main .description .description__info-list {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.main .description .description__info-list .list__item {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.main .description .description__info-list .list__item .list__item-strong {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.main .description .description__info-list .list__item .list__item-small {
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main .description .description__info-slogan .slogan-title {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.main .description .description__info-slogan .slogan-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.main .description .description__info-slogan .slogan-text .line {
+  width: 38%;
+  margin: 6px 5px 0 0;
+  border-top: 1px solid #e8f369;
+}
+.main .description .description__info-slogan .slogan-text .features {
+  display: flex;
+  flex-direction: column;
+}
+.main .description .description__info-slogan .slogan-text .features .features__item {
+  font-size: 11px;
+  font-weight: 300;
+  color: #5a5959;
+}
+.main .description .description__partnership {
+  max-width: 50vw;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main .description .description__partnership .partnership__gettingstarted {
+  width: 90%;
+}
+.main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany .gettingstarted__requestdemo .gettingstarted__requestdemo-text {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany .gettingstarted__requestdemo .gettingstarted__requestdemo-button {
+  padding: 12px 25px;
+  border: 1px solid #e8f369;
+  border-radius: 10px;
+  background-color: #e8f369;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.main .description .description__partnership .partnership__social {
+  width: 10%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.main .description .description__partnership .partnership__social .links__item {
+  border: 1px solid #e8f369;
+  border-radius: 50%;
+  padding: 5px;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */
