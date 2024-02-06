@@ -66,13 +66,13 @@ body {
 }
 .main .description .description__info {
   max-width: 40vw;
-  margin-right: 10vw;
+  margin-right: 5vw;
   color: #ffffff;
 }
 .main .description .description__info .description__info-title {
   font-size: 50px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.3;
   margin-bottom: 70px;
 }
 .main .description .description__info-list {
@@ -123,19 +123,23 @@ body {
   color: #5a5959;
 }
 .main .description .description__partnership {
-  max-width: 50vw;
-  display: flex;
-  flex-flow: row nowrap;
+  max-width: 45vw;
 }
 .main .description .description__partnership .partnership__gettingstarted {
   width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany {
+  display: flex;
+  flex-flow: column nowrap;
 }
 .main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany .gettingstarted__requestdemo .gettingstarted__requestdemo-text {
   color: #ffffff;
   font-size: 15px;
   font-weight: 200;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany .gettingstarted__requestdemo .gettingstarted__requestdemo-button {
   padding: 12px 25px;
@@ -147,14 +151,36 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
 }
+.main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany .gettingstarted__ourpartners .gettingstarted__ourpartners-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany .gettingstarted__ourpartners .gettingstarted__ourpartners-list .list__item {
+  margin: 10vh 10px 0;
+}
+.main .description .description__partnership .partnership__gettingstarted .gettingstarted_infoCompany .gettingstarted__ourpartners .gettingstarted__ourpartners-list .list__item img {
+  width: 100px;
+  height: auto;
+}
 .main .description .description__partnership .partnership__social {
-  width: 10%;
+  float: right;
   display: flex;
   flex-flow: column nowrap;
+  margin-left: 60px;
 }
 .main .description .description__partnership .partnership__social .links__item {
+  font-size: 10px;
+  font-weight: 500;
   border: 1px solid #e8f369;
   border-radius: 50%;
   padding: 5px;
+  text-align: center;
+  margin-bottom: 10px;
   width: auto;
+  color: #e8f369;
+  text-decoration: none;
+}
+.main .description .description__partnership .parthership__demonstration img {
+  width: 40vw;
 }/*# sourceMappingURL=style.css.map */

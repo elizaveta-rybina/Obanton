@@ -92,7 +92,7 @@ $yellow: #ffffff;
 
     .description__info {
       max-width: 40vw;
-      margin-right: 10vw;
+      margin-right: 5vw;
       color: $colorWhite;
 
       .description__info-title {
@@ -100,7 +100,7 @@ $yellow: #ffffff;
           size: 50px;
           weight: 500;
         }
-        line-height: 1.2;
+        line-height: 1.3;
         margin-bottom: 70px;
       }
     }
@@ -172,14 +172,17 @@ $yellow: #ffffff;
     }
 
     .description__partnership {
-      max-width: 50vw;
-      display: flex;
-      flex-flow: row nowrap;
+      max-width: 45vw;
 
       .partnership__gettingstarted {
         width: 90%;
+        display: flex;
+        flex-flow: row nowrap;
 
         .gettingstarted_infoCompany {
+          display: flex;
+          flex-flow: column nowrap;
+
           .gettingstarted__requestdemo {
             .gettingstarted__requestdemo-text {
               color: $colorWhite;
@@ -188,7 +191,7 @@ $yellow: #ffffff;
                 weight: 200;
               }
               line-height: 1.6;
-              margin-bottom: 20px;
+              margin-bottom: 30px;
             }
 
             .gettingstarted__requestdemo-button {
@@ -204,19 +207,50 @@ $yellow: #ffffff;
               letter-spacing: 1px;
             }
           }
+
+          .gettingstarted__ourpartners {
+            .gettingstarted__ourpartners-list {
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: space-between;
+
+              .list__item {
+                margin: 10vh 10px 0;
+                img {
+                  width: 100px;
+                  height: auto;
+                }
+              }
+            }
+          }
         }
       }
 
       .partnership__social {
-        width: 10%;
+        float: right;
         display: flex;
         flex-flow: column nowrap;
+        margin-left: 60px;
 
         .links__item {
+          font: {
+            size: 10px;
+            weight: 500;
+          }
           border: 1px solid $colorAcent;
           border-radius: 50%;
           padding: 5px;
+          text-align: center;
+          margin-bottom: 10px;
           width: auto;
+          color: $colorAcent;
+          text-decoration: none;
+        }
+      }
+
+      .parthership__demonstration {
+        img {
+          width: 40vw;
         }
       }
     }
