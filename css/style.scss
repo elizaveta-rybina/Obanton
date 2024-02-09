@@ -6,6 +6,22 @@ $colorWhite: #ffffff;
 $colorGray: #5a5959;
 $colorAcent: #e8f369;
 
+/* layout-breakpoints */
+
+$layout-breakpoint-phone__min: 320px;
+$layout-breakpoint-phone__max: 480px;
+
+$layout-breakpoint-ipad__min: 481px;
+$layout-breakpoint-ipad__max: 768px;
+
+$layout-breakpoint-laptop_min: 769px;
+$layout-breakpoint-laptop__max: 1024px;
+
+$layout-breakpoint-computer_min: 1025px;
+$layout-breakpoint-computer__max: 1200px;
+
+$layout-breakpoint-TV__mim: 1201px;
+
 * {
   padding: 0;
   margin: 0;
@@ -256,3 +272,7 @@ $yellow: #ffffff;
     }
   }
 }
+
+@media only screen {
+
+} 
